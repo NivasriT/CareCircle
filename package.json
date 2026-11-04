@@ -1,0 +1,19 @@
+{
+  "name": "carecircle",
+  "version": "1.0.0",
+  "description": "CareCircle – A Collaborative Platform for Social Service and Community Support",
+  "scripts": {
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "install:all": "npm run install:server && npm run install:client",
+    "build": "cd client && npm run build",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "start": "node server/index.js",
+    "render-build": "cd server && npm install && cd ../client && npm install && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
