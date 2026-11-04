@@ -10,6 +10,7 @@
     "server": "cd server && npm run dev",
     "client": "cd client && npm run dev",
     "seed": "cd server && npm run seed",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "node server/index.js",
     "render-build": "cd server && npm install && cd ../client && npm install && npm run build"
   },
